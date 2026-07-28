@@ -22,16 +22,5 @@ function createHeart() {
 
 setInterval(createHeart, 400);
 
-function openLetter() {
-    window.location.href = "letter.html";
-}
 
-const music = document.getElementById("Love");
 
-function toggleMusic() {
-    if (music.paused) {
-        music.play();
-    } else {
-        music.pause();
-    }
-}

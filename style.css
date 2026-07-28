@@ -6,12 +6,12 @@
     padding: 100px;
     max-width: 90%;
     border-radius: 20px;
-    width: 600px;
+    width: 200px;
     
 }
 .head{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
 }
 body{
@@ -59,4 +59,8 @@ body{
     margin-top: 30px;
     line-height: 1.8;
     
+}
+.cap{
+    font-family:"Arial";
+    color:#6d3b52;
 }
