@@ -14,7 +14,8 @@
 		</div>
 		
 		<p class="cap">
-		             Now playing: <strong>Loving Machine</strong> by <strong>Tv girl</strong>
+		             Now playing: <strong>Loving Machine</strong> <br>
+					 by <strong>Tvgirl</strong> (your fav)
 					 </p>
 						 <audio controls loop>
 							<source src="LovingMachine.mp3" type="audio/mp3">
@@ -31,8 +32,24 @@
 						
 						<p class="card">Happiestt Birthdayy <br>
 					  Made with a whole lot of lovee <br> </p> 
-					<button id="btn" onclick="openLetter()"> A letter for youuu</button>
+					<div id="intro">
+						<h2 class="hee"> Click heree</h2>
+						<button id="loveButton" onclick="startLove()">
+							Open my letter
+						</button>
+							</div>
+							<div id="transition">
+								waittt.. <br>
+							</div>
+							<div id="letter">
+						
+						<p id="typewriter"> heyy</p>
+						</div>
 					</div>
+					< audio id ="loveSong" loop>
+						<source src="LovingMachine.mp3" type="audio/mp3">
+						Your browser does not support the audio element.
+					</audio>
 				</center>
 			</main>
 			<script src="script.js">

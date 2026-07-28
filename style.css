@@ -68,5 +68,17 @@ body{
     position: absolute;
     margin-left: 800px;
     margin-top: 30px;
-    z-index: 1;
+    z-index: 1
+}
+#typewriter {
+    white-space: pre-wrap;
+    font-size: 25px;
+    line-height: 1.8;
+    color: #7a284b;
+}
+.hee{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+color: black;
 }
