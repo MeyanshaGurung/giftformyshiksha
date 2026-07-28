@@ -15,7 +15,7 @@
     text-align: center;
 }
 body{
-    cursor:url;
+    cursor:url(nat988.cur), auto;
     background-color: #fff8fa;
     overflow: hidden;
     
@@ -63,4 +63,10 @@ body{
 .cap{
     font-family:"Arial";
     color:#6d3b52;
+}
+.tv{
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 30px;
+    z-index: 1;
 }
