@@ -3,10 +3,10 @@
     color: white;
     text-align: center;
     background: #ffe4ef;
-    padding: 100px;
+    padding: 50px;
     max-width: 90%;
     border-radius: 20px;
-    width: 200px;
+    width: 300px;
     
 }
 .head{
@@ -81,4 +81,26 @@ body{
     font-size: 30px;
     text-align: center;
 color: black;
+}
+ 
+#loveButton {
+    margin-top: 30px;
+    padding: 15px 35px;
+    font-size: 20px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(45deg, #ff8fab, #ff4d6d);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(255, 77, 109, 0.35);
+    transition: all 0.3s ease;
+}
+
+#loveButton:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(255, 77, 109, 0.5);
+}
+
+#loveButton:active {
+    transform: scale(0.96);
 }
