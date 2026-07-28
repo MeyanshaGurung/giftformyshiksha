@@ -17,7 +17,7 @@
 body{
     cursor:url(nat988.cur), auto;
     background-color: #fff8fa;
-    overflow: hidden;
+    overflow-y: auto;
     
 }
 .card{
