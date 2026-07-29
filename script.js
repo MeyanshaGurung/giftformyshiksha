@@ -1,6 +1,7 @@
 const hearts = document.querySelector('.hearts');
 
 function createHeart() {
+    console.log('heart created')
     const heart = document.createElement('span');
     heart.innerHTML = '💕';
     heart.style.left = (Math.random() * 100) + "vw";
@@ -18,6 +19,13 @@ const message = 'Dear shiksha';
 let i = 0;
 const speed = 45;
 
+
+function onButtonClick() {
+    i = 0;
+    document.getElementById("typewriter").innerHTML = "";
+    setTimeout(typeWriter, 5000); 
+}
+
 function typeWriter() {
     if (i < message.length) {
         if (message.charAt(i) === '\n') {
@@ -31,16 +39,48 @@ function typeWriter() {
 }
 
 function startLove() {
-    document.getElementById('intro').style.display = 'none';
-    document.getElementById('transition').style.display = 'block';
 
-    const music = document.getElementById("loveSong");
-    music.play().catch(() => {});
+    window.location.href = "letter.html";
 
-    setTimeout(() =>{
-        document.getElementById('transition').style.display = 'none';
-        document.getElementById('letter').style.display = 'block';
-        typeWriter();
-    }, 2500);
 }
 
+const songImage= document.getElementById("song-image");
+const songName= document.getElementById("song-name");
+const songArtist= document.getElementById("song-artist");
+const songSlider= document.getElementById("slider-song");
+
+const playpauseButton= document.getElementById("playpause");
+const repeatButton = doument.getElementById("repeat");
+
+
+
+const songs= [
+{
+    image: "aln.png",
+    audio: "LovingMachine.mp3",
+    name: "Loving Machine",
+    artist: "TvGirl"
+}
+];
+
+
+
+function updateSong(){
+const song=songs[currentSongIndex];
+songName.innerText=song.name;
+songArtist.innerText=song.artist;
+songImage.src = song.image;
+
+audio.src= song.audio;
+}
+
+
+const audio = document.createElement("audio");
+let currentSongIndex =0 ;
+updateSong();
+
+playpauseButton.addEventListener("click",function() {
+    audio.play();
+    updateSong();
+
+});

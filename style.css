@@ -17,7 +17,8 @@
 body{
     cursor:url(nat988.cur), auto;
     background-color: #fff8fa;
-    overflow-y: auto;
+
+    
     
 }
 .card{
@@ -96,11 +97,80 @@ color: black;
     transition: all 0.3s ease;
 }
 
-#loveButton:hover {
-    transform: scale(1.08);
-    box-shadow: 0 10px 30px rgba(255, 77, 109, 0.5);
+#loveButton{
+    background:#ff6fa8;
+    color:white;
+    border:none;
+    border-radius:999px;
+    padding:18px 48px;
+    font-size:20px;
+    font-weight:700;
+    box-shadow:0 8px 0 #e94b86;
+    transition:.15s;
 }
 
-#loveButton:active {
-    transform: scale(0.96);
+#loveButton:hover{
+    transform:translateY(-2px);
+}
+
+#loveButton:active{
+    transform:translateY(6px);
+    box-shadow:0 2px 0 #e94b86;
+}
+
+#transition{
+    display:none;
+    font-size: 25px;
+    color:rgba(255, 77, 109, 0.5);
+}
+#song-img{
+    height:250px;
+    width:250px;
+    border-radius:10px;
+}
+#music{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+#song-name{
+    font-size: 2em;
+    margin-top:20px;
+}
+#music-buttons{
+    display:flex;
+    align-items: center;
+    margin-top: 20px;
+}
+#music-buttons i {
+    padding:5px;
+    
+}
+#slider-song{
+    -webkit-appearance: none;
+    -noz-appearance:none;
+    appearance: none;
+    width:250px;
+    height:5px;
+    background: repeating-linear-gradient(45deg,#0351a3
+    ,#0351a3 12px, #ee2689 12px,#ee2689 24px);
+    border:1px solid #0351a3;
+    border-radius:20px;
+    margin-top:20px;
+}
+#slider-song::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -noz-appearance:none;
+    appearance: none;
+    background-color:#ee2689;
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+}
+#song-name{
+    font-family:'Franie', sans-serif;
+}
+#song-artist{
+    font-family:'Franie', sans-serif;
 }
