@@ -50,7 +50,7 @@ const songArtist= document.getElementById("song-artist");
 const songSlider= document.getElementById("slider-song");
 
 const playpauseButton= document.getElementById("playpause");
-const repeatButton = doument.getElementById("repeat");
+const repeatButton = document.getElementById("repeat");
 
 
 
@@ -72,15 +72,37 @@ songArtist.innerText=song.artist;
 songImage.src = song.image;
 
 audio.src= song.audio;
+audio.onloadedmetadata=function()
+{
+songSlider.value=0;
+songSlider.max = audio.duration;
 }
 
+songSlider.addEventListener("change",function(){
+ audio.currentTime=songSlider.value;
+}) ;
+   
 
-const audio = document.createElement("audio");
+}
+ function moveSlider
+(){
+    songSlider.value=audio.currentTime;
+};
+
+setInterval(moveSlider,1000);
+
+
+const audio = document.getElementById("audio");
 let currentSongIndex =0 ;
 updateSong();
 
 playpauseButton.addEventListener("click",function() {
+   if (!audio.paused){
+    audio.pause();
+   }
+    else{
     audio.play();
-    updateSong();
+    }
+    
 
 });
