@@ -20,23 +20,7 @@ let i = 0;
 const speed = 45;
 
 
-function onButtonClick() {
-    i = 0;
-    document.getElementById("typewriter").innerHTML = "";
-    setTimeout(typeWriter, 5000); 
-}
 
-function typeWriter() {
-    if (i < message.length) {
-        if (message.charAt(i) === '\n') {
-            document.getElementById("typewriter").innerHTML += '<br>';
-        } else {
-            document.getElementById("typewriter").innerHTML += message.charAt(i);
-        }
-        i++;
-        setTimeout(typeWriter, speed);
-    }
-}
 
 function startLove() {
 
